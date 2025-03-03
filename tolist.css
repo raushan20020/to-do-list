@@ -1,0 +1,109 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  background: rgb(144,152,143);
+background: linear-gradient(90deg, rgba(144,152,143,1) 1%, rgba(126,144,124,1) 4%, rgba(84,116,86,1) 25%, rgba(76,100,82,1) 36%, rgba(70,87,79,1) 45%, rgba(60,67,74,1) 59%, rgba(52,50,70,1) 71%, rgba(43,33,66,1) 83%, rgba(39,26,65,1) 88%, rgba(36,21,64,1) 92%, rgba(31,10,61,1) 100%);;
+  
+}
+.todoapp{
+  width: 100%;
+  max-width: 540px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin: 100px auto 20px;
+  padding: 40px 30px 70px;
+
+}
+
+.todoapp h2{
+  color: #002765;
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.todoapp h2 img{
+  width: 75px;
+  height: 60px;
+  margin-left: 50px;
+}
+
+.row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #edeef0;
+  border-radius: 20px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+input{
+  flex: 1;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  padding: 10px;
+}
+button{
+  border: none;
+  outline: none;
+  padding: 16px 45px;
+  border-radius: 25px;
+  background-color: orange;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+
+#listContainer li{
+  list-style: none;
+  font-size: 17px;
+  padding: 12px 8px 12px 50px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+}
+ul li::before{
+  content: ' ';
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  /* border: 1px solid; */
+  background-image: url(uncheck.png);
+  background-size: cover;
+  background-position: center;
+  top: 10px;
+  left: 5px;
+}
+ul li.checked{
+  columns: #555;
+  text-decoration: line-through;
+}
+ul li.checked::before{
+  background-image: url(pngtree-vector-illustration-of-an-orange-checkmark-icon-with-a-tick-symbol-png-image_12885838.png);
+}
+
+ul li span{
+  position: absolute;
+  right: 0;
+  font-size: 25px;
+  color: #555;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+ul li span:hover{
+  background: aqua;
+}
